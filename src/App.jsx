@@ -9,20 +9,18 @@ import Testimonial from "./components/testimonials/Testimonial";
 import Contact from "./components/contact/Contact";
 import Footer from "./components/footer/Footer";
 
-const App = () => {
-  return (
-    <>
-      <Header></Header>
-      <Nav></Nav>
-      <About></About>
-      <Experience></Experience>
-      <Services></Services>
-      <Cv></Cv>
-      <Testimonial></Testimonial>
-      <Contact></Contact>
-      <Footer></Footer>
-    </>
-  );
-};
+const App = () => (
+  <>
+    <Header></Header>
+    <Nav></Nav>
+    <About></About>
+    <Experience></Experience>
+    <Services></Services>
+    <Cv></Cv>
+    <Testimonial></Testimonial>
+    <Contact></Contact>
+    <Footer></Footer>
+  </>
+);
 
 export default App;
