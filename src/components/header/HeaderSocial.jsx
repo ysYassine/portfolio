@@ -12,7 +12,7 @@ const HeaderSocial = () => {
       <a href="https://github.com/ysYassine" target="_blank" rel="noreferrer">
         <FaGithub></FaGithub>
       </a>
-      <a href="#contact" target="_blank" rel="noreferrer">
+      <a href="mailto: test@test.test" target="_blank" rel="noreferrer">
         <MdEmail></MdEmail>
       </a>
     </div>

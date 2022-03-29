@@ -5,13 +5,14 @@ import AVATAR2 from "../../assets/avatar2.jpg";
 import AVATAR3 from "../../assets/avatar3.jpg";
 import AVATAR4 from "../../assets/avatar4.jpg";
 // import Swiper core and required modules
-import { Navigation, Pagination } from "swiper";
+import { Navigation, Pagination, Scrollbar } from "swiper";
 
 import { Swiper, SwiperSlide } from "swiper/react";
 
 // Import Swiper styles
 import "swiper/css";
 import "swiper/css/pagination";
+import { TESTIMONALS_REF } from "../../utils/sharedVariables";
 
 const data = [
   {
@@ -42,16 +43,17 @@ const data = [
 
 const Testimonial = () => {
   return (
-    <section id="testimonials">
+    <section id={TESTIMONALS_REF}>
       <h5>Review from clients</h5>
       <h2>Testimonials</h2>
       <Swiper
         className="container testimonials__container" // install Swiper modules
-        modules={[Navigation, Pagination]}
+        modules={[Navigation, Pagination, Scrollbar]}
         spaceBetween={40}
         slidesPerView={1}
         navigation
         pagination={{ clickable: true }}
+        scrollbar={{ draggable: true }}
       >
         {data.map(({ avatar, name, review }) => (
           <SwiperSlide className="testimonial" key={name}>
